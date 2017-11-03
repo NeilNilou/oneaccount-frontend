@@ -9,13 +9,13 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 ```
-Nothing for now
+Electron must be installed in order to run this project.
 ```
 
 ### Installing
 
 ```
-Nothing for now
+Run the app with 'npm start'
 ```
 
 ## Running the tests
