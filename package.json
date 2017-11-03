@@ -1,0 +1,11 @@
+{
+  "name": "oneaccount-webapp",
+  "version": "1.0.0",
+  "description": "OneAcccount Web application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Neil Bource",
+  "license": "MIT"
+}

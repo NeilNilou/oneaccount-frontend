@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+  <html lang="fr">
+    <head>
+
+    	<title>One Account - Inscription</title>
+
+    	<meta charset="utf-8">
+	    <!--Import Google Icon Font-->
+	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	    <!--Import materialize.css-->
+	    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+	    <link type="text/css" rel="stylesheet" href="../css/custom.css"/>
+	    <!--Let browser know website is optimized for mobile-->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Modal Header</h4>
+                <p>A bunch of text</p>
+            </div>
+            <div class="modal-footer">
+                <a href="register.html" class="modal-action modal-close waves-effect waves-green btn-flat">Revenir</a>
+            </div>
+        </div>
+    	<header></header>
+
+    	<main>
+	    	<div class="row">
+		    	<nav>
+				    <div class="nav-wrapper teal darken-1">
+                        <a href="index.html"><img src="../resource/img/logo-nav.png" id="logo-img"/></a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="login.html">Connexion</a></li>
+                            <li><a href="register.html">Créer un compte</a></li>
+                            <li><a href="about.html">À propos</a></li>
+				      </ul>
+				    </div>
+				</nav>
+
+		    	<div class="col s12">
+		    		<div class="homepage-logo"><a href="index.html"><img src="../resource/img/logo-transparent.png"></a></div>
+
+		    		<h2 class="text-strong blue-grey-text darken-4" id="section-title">Créer un compte</h2>
+		    		<p id="section-caption">Créer un compte vous permettra de gérer vos informations personnelles sur internet ainsi que les services avec lesquels ils sont attachés.</p>
+
+		    		<div class="row teal darken-3" id="register-page">
+                        <form class="col s12" method="post">
+
+                            <div class="row" id="mail-row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix white-text">account_circle</i>
+                                    <input placeholder="Email" type="email" class="validate white-text" id="email-input" required>
+                                </div>
+                                <div id="error-msg-email">
+                                    <img src="../resource/img/warning.png" id="img-warning"/>
+                                    <div id="error-msg-email-content"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="row" id="telephone-row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix white-text">phone</i>
+                                    <input placeholder="Téléphone" type="tel" class="validate white-text" id="phone-input" required>
+                                </div>
+                                <div id="error-msg-phone">
+                                    <img src="../resource/img/warning.png" id="img-warning"/>
+                                    <div id="error-msg-phone-content"></div>
+                                </div>
+                            </div>
+
+                            <div class="row" id="password-creation-row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix white-text">vpn_key</i>
+                                    <input placeholder="Créer un mot de passe" type="password" class="validate white-text" id="password-creation-input" required>
+                                </div>
+                                <div id="error-msg-password-creation">
+                                    <img src="../resource/img/warning.png" id="img-warning"/>
+                                    <div id="error-msg-password-creation-content"></div>
+                                </div>
+                            </div>
+
+                            <div class="row" id="password-confirmation-row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix white-text">vpn_key</i>
+                                    <input placeholder="Confirmez votre mot de passe" type="password" class="validate white-text" id="password-confirmation-input" required>
+                                </div>
+                                <div id="error-msg-password-confirmation">
+                                    <img src="../resource/img/warning.png" id="img-warning"/>
+                                    <div id="error-msg-password-confirmation-content"></div>
+                                </div>                                
+                            </div>
+
+                            <button class="green darken-2 btn waves-effect waves-light" type="button" name="action" id="btn-inscription" onclick="register()">Suivant
+                                <i class="material-icons right">send</i>
+                            </button>
+
+                        </form>
+			        </div>
+		    	</div>
+			</div>
+
+		</main>
+        
+		<footer class="page-footer teal darken-1">
+          <div class="footer-copyright">
+            <div class="container" id="text-center">
+            Tous droits réservés. © 2017 One Account
+            </div>
+          </div>
+        </footer>
+
+	    <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="../js/register.js"></script>
+	    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	    <script type="text/javascript" src="../js/materialize.min.js"></script>
+
+    </body>
+  </html>
