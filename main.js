@@ -10,11 +10,11 @@ let appWindow;
 app.on('ready', function(){
 
 	// Create a new window
-	appWindow = new BrowserWindow({width:800, height:600, icon: path.join(__dirname, 'logo.png')});
+	appWindow = new BrowserWindow({width:800, height:600, icon: path.join(__dirname, './resource/img/logo-nav.png')});
 
 	// Load HTML into the window
 	appWindow.loadURL(url.format({
-		pathname: path.join(__dirname, 'index.html'),
+		pathname: path.join(__dirname, './html/index.html'),
 		protocol:'file:',
 		slashes: true
 	}));
